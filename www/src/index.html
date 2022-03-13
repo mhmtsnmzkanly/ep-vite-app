@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="<%- appTargetLanguage %>">
+<head>
+  <meta charset="utf-8" />
+  <title><%- appTitle %></title>
+  <!-- Manifest -->
+  <!--<link rel="manifest" href="/manifest.json" />-->
+  <!--- Meta --->
+  <meta name="author" content="<%- appContactAddress %>" />
+  <meta name="designer" content="<%- appContactAddress %>" />
+  <meta name="owner" content="<%- appContactAddress %>" />
+  <meta name="url" content="<%- appUrl %>" />
+  <meta name="identifier-URL" content="<%- appUrl %>" />
+  <meta name="title" content="<%- appTitle %>" />
+  <meta name="description" content="<%- appDesc %>" />
+  <meta name="keywords" content="<%- appKeys %>" />
+  <meta name="copyright" content="<%- appCopyright %>" />
+  <meta name="subject" content="<%- appType %>" />
+  <meta name="language" content="<%- appTargetLanguage %>" />
+  <meta name="robots" content="index,follow" />
+  <meta name="category" content="<%- appType %>" />
+  <meta name="coverage" content="Worldwide" />
+  <meta name="distribution" content="Global" />
+  <meta name="rating" content="General" />
+  <meta name="og:title" content="<%- appTitle %>" />
+  <meta name="og:type" content="<%- appType %>" />
+  <meta name="og:url" content="<%- appUrl %>"/>
+  <meta name="og:image" content="<%- appPreviewImage %>"/>
+  <meta name="og:site_name" content="<%- appTitle %>"/>
+  <meta name="og:description" content="<%- appDesc %>"/>
+  <meta name="fb:page_id" content="" />
+  <!-- Cache -->
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <!-- Viewport -->
+  <meta http-equiv="content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <!-- Mobile & Tablets --><meta name="theme-color" content="#fff" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <!-- Styles -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- Scripts -->
+	<!-- Matomo Tag Manager -->
+	<script>var _mtm = window._mtm = window._mtm || [];_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];g.async=true; g.src='https://matomo.ephemeralrealm.xyz/js/container_8Xh3AdI5.js'; s.parentNode.insertBefore(g,s);</script>
+	<!-- End Matomo Tag Manager -->
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+</head>
+<body class="d-flex flex-column h-100 text-center text-white bg-dark">
+  <main id="ep-app">
+  <header class="cover-container d-flex w-100 h-20 p-3 mx-auto flex-column">
+    <div class="mt-3 mb-2">
+        <a class="text-white" href="<%- appUrl %>"><h3 class="float-md-start mb-2"><i class="ti ti-yin-yang"></i>&nbsp;<%- appTitle %></h3></a>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link active" href="#"><i class="ti ti-home-2"></i>&nbsp;Home</a>
+            <a class="nav-link" href="#!/project"><i class="ti ti-archive"></i>&nbsp;Projects</a>
+            <a class="nav-link" href="mailto:<%- appContactAddress %>"><i class="ti ti-mail"></i>&nbsp;Contact</a>
+        </nav>
+    </div>
+  </header>
+  <main class="cover-container d-flex w-100 h-80 p-5 mx-auto my-5 flex-column">
+    <div class="px-3 py-5">
+        <h1><%- appTitle %></h1><br/>
+        <h3 class="lead"><%- appDesc %></h3><br/>
+        <!-- <p class="lead">
+            <div class="modal fade" id="modal-learn-more" tabindex="-1" aria-hidden="true"></div>
+            <a href="#" id="learn-more" class="btn btn-lg btn-secondary fw-bold border-white bg-white" data-bs-toggle="modal" data-bs-target="#modal-learn-more">Learn more</a>
+        </p> -->
+      </div>
+  </main>
+  <footer class="container">
+    <p class="text-white-30 m-2 p-2"><%- appCopyright %></p>  
+  </footer>
+</main>
+<script type="module" src="/scripts/index.ts"></script>
+</body>
+</html>
